@@ -2,7 +2,8 @@
   A: line 11
 
 2. What code makes the "lawnmover" come by? How often does it come by?
-  A: line 25, the number after the "="
+  A: line 18 and 19, the number in the random() determines how many times until it will cut and
+  line 19 sets the cap height of the grass
 
 3. What's the point of the "h" variable?
   A: The point of the "h" variable is to store the value 10.
