@@ -1,0 +1,30 @@
+function setup() {
+  createCanvas(400, 200);
+  colorMode(HSB);
+}
+
+var x = 0;
+var h = 10;
+
+function draw() {
+  stroke(random(50, 20), 100, 90); // color
+  line(x, height-10, x+random(-10, 10), // grass
+       height-20-5);
+  noStroke()
+
+  x = x + 10;
+
+  if (x > width) {
+    x = 1;
+    h = h + 3;
+  }
+
+  if (random() > 0.999) {
+    fill(255);
+    rect(0, 0, width, height-15); //background
+    h = 10;
+  }
+
+  fill(40, 100, 60);
+  rect(0, height-10, width, 10); //ground
+}
